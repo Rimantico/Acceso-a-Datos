@@ -21,6 +21,8 @@ public final class Encargado extends Empleado {
 		super(dni, nombre, apellidos, departamento);
 		this.cargoEmpresa = cargoEmpresa;
 		numEmpleados++;
+		mediaSueldo += sueldo;
+		mediaSueldo = mediaSueldo / numEmpleados;
 		
 	}
 	
@@ -29,6 +31,8 @@ public final class Encargado extends Empleado {
 		this.cargoEmpresa = cargoEmpresa;
 		this.sueldo = sueldo;
 		numEmpleados++;
+		mediaSueldo += sueldo;
+		mediaSueldo = mediaSueldo / numEmpleados;
 		
 	}
 	
@@ -48,6 +52,8 @@ public final class Encargado extends Empleado {
 
 	public void setSueldo(double sueldo) {
 		this.sueldo = sueldo;
+		mediaSueldo += sueldo;
+		mediaSueldo = mediaSueldo / numEmpleados;
 	}
 
 
