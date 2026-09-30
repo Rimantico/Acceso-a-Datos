@@ -9,6 +9,11 @@ import java.util.ArrayList;
 import models.Empleado;
 
 public class UtilsFicheroArray {
+	
+	/**
+	 * Creo el archivo de Texto, que me pida
+	 * @param nombreArchivo
+	 */
 
 	public static void crearArchivo(String nombreArchivo) {
 		File archivo = new File(nombreArchivo);
@@ -23,6 +28,11 @@ public class UtilsFicheroArray {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * Leo el archivo de texto
+	 * @param nombreArchivo
+	 */
 
 	public static void leerArchivo(String nombreArchivo) {
 		try {
@@ -40,13 +50,19 @@ public class UtilsFicheroArray {
 
 	// TODO Auto-generated catch block
 
-	public static void pasarArchivoArray(String nombreArchivo) {
+	
+	/**
+	 * Paso el archivo a un ArrayList
+	 * @param nombreArchivo
+	 * @return
+	 */
+	public static ArrayList<Empleado> pasarArchivoArray(String nombreArchivo) {
+		ArrayList<Empleado> empleados = new ArrayList<>();
 		try {
 			BufferedReader lector = new BufferedReader(new FileReader(nombreArchivo));
 
 			lector.readLine();
 
-			ArrayList<Empleado> empleados = new ArrayList<>();
 
 			String linea;
 
@@ -72,10 +88,12 @@ public class UtilsFicheroArray {
 				System.out.println(empleado);
 			}
 			lector.close();
+			;
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return  empleados;
 
 	}
 
