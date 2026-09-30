@@ -132,11 +132,11 @@ public class Empleado extends Persona{
 			int numero = (int) (Math.random() * 3) + 1;
 			
 			if(numero == 1) {
-				departamento = departamento.Contabilidad;
+				departamento = Departamento.Contabilidad;
 			}else if(numero == 2) {
-				departamento = departamento.Logistica;
+				departamento = Departamento.Logistica;
 			}else
-				departamento = departamento.Soporte_al_usuario;
+				departamento = Departamento.Soporte_al_usuario;
 			
 			Empleado empleadoNuevo = new Empleado(dni,nombre,apellido,departamento);
 			
