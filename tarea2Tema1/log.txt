@@ -1,0 +1,14 @@
+2026-10-07 10:50:51 Método: cafeteria Fichero Entrada: cafeteria.csv Fichero Salida: cafeteria.dat
+2026-10-07 10:50:51 Método: cafeteria Fichero Entrada: cafeteria.dat Fichero Salida: cafeteria.csv
+2026-10-07 10:50:51 Método: cafeteria.csv Fichero Entrada: cafeteria.csv.csv Fichero Salida: cafeteria.csvord.csv
+2026-10-07 10:50:51 Método: cafeteria.dat Fichero Entrada: cafeteria.dat.dat Fichero Salida: cafeteria.datord.dat
+2026-10-07 10:50:51 Método: cafeteria Fichero Entrada: cafeteria.dat Fichero Salida: cafeteria.csv
+2026-10-07 10:50:51 Método: cafeteria Fichero Entrada: cafeteria.csv Fichero Salida: cafeteriaord.csv
+2026-10-07 10:50:51 Método: cafeteria Fichero Entrada: cafeteria.dat Fichero Salida: cafeteriaord.csv
+2026-10-07 10:53:35 Método: cafeteria Fichero Entrada: cafeteria.csv Fichero Salida: cafeteria.dat
+2026-10-07 10:53:35 Método: cafeteria Fichero Entrada: cafeteria.dat Fichero Salida: cafeteria.csv
+2026-10-07 10:53:35 Método: cafeteria.csv Fichero Entrada: cafeteria.csv.csv Fichero Salida: cafeteria.csvord.csv
+2026-10-07 10:53:35 Método: cafeteria.dat Fichero Entrada: cafeteria.dat.dat Fichero Salida: cafeteria.datord.dat
+2026-10-07 10:53:35 Método: cafeteria Fichero Entrada: cafeteria.dat Fichero Salida: cafeteria.csv
+2026-10-07 10:53:35 Método: cafeteria.csv Fichero Entrada: cafeteria.csv.csv Fichero Salida: cafeteria.csvord.csv
+2026-10-07 10:53:35 Método: cafeteria Fichero Entrada: cafeteria.dat Fichero Salida: cafeteriaord.csv
