@@ -68,7 +68,7 @@ public class MetodosCSV {
 			e.printStackTrace();
 		}
 
-		escribir_Log_Metodos(nombre, nombre + ".csv", nombre + ".dat");
+		escribir_Log_Metodos("fichero_CSV_To_Binario", nombre + ".csv", nombre + ".dat");
 	}
 
 	/**
@@ -124,7 +124,7 @@ public class MetodosCSV {
 			e.printStackTrace();
 		}
 
-		escribir_Log_Metodos(nombre, nombre + ".dat", nombre + ".csv");
+		escribir_Log_Metodos("fichero_Binario_To_CSV", nombre + ".dat", nombre + ".csv");
 	}
 
 	/**
@@ -149,7 +149,7 @@ public class MetodosCSV {
 			e.printStackTrace();
 		}
 
-		escribir_Log_Metodos(nombre, nombre + ".csv", nombre + "ord.csv");
+		escribir_Log_Metodos("ordenar_Archivo_CSV", nombre + ".csv", nombre + "ord.csv");
 
 	}
 
@@ -194,7 +194,7 @@ public class MetodosCSV {
 			e.printStackTrace();
 		}
 
-		escribir_Log_Metodos(nombre, nombre + ".dat", nombre + "ord.dat");
+		escribir_Log_Metodos("ordenar_Archvio_Binario", nombre + ".dat", nombre + "ord.dat");
 
 	}
 
@@ -211,7 +211,7 @@ public class MetodosCSV {
 		
 		ordenar_Archivo_CSV(nombre + ".csv");
 
-		escribir_Log_Metodos(nombre, nombre + ".dat", nombre + "ord.csv");
+		escribir_Log_Metodos("fichero_Binario_To_CSV", nombre + ".dat", nombre + "ord.csv");
 	}
 
 	/**
