@@ -25,10 +25,12 @@ public class MetodosCSV {
 
 	}
 
+	/**
+	 * Este método lo que hace es escribir dentro de un csv
+	 * @param carpeta
+	 */
 	public static void escribirArchivo(File carpeta) {
 		FileWriter escribir;
-
-		
 
 		File[] archivos = carpeta.listFiles();
 
