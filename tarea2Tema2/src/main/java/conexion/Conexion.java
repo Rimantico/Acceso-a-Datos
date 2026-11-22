@@ -5,23 +5,22 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexion {
+    static final String USUARIO = "root";
+    static final String CONTRASEÑA = "root";
+    static final String URL = "jdbc:mysql://localhost:3306/sakila";
 
-	static final String USUARIO = "root";
-	static final String CONTRASEÑA = "root";
-	static final String URL = "jdbc:mysql://localhost:3306/sakila";
-	static Connection CONEXION = null;
+    private Conexion() { }
 
-	public static Connection conectarBD() {
-
-		try {
-			CONEXION = DriverManager.getConnection(URL, USUARIO, CONTRASEÑA);
-			System.out.println("Todo OK");
-			return CONEXION;
-		} catch (SQLException e) {
-			System.out.println("Error en SQL");
-			e.printStackTrace();
-		}
-		return CONEXION;
-	}
-
+    // Cada llamada entrega una conexion nueva; quien la usa debe cerrarla.
+    public static Connection conectarBD() throws SQLException {
+        String url = System.getenv("SAKILA_URL");
+        String usuario = System.getenv("SAKILA_USER");
+        String clave = System.getenv("SAKILA_PASSWORD");
+        if (url == null || url.trim().isEmpty()) {
+            url = URL + "?connectTimeout=5000&socketTimeout=10000";
+        }
+        if (usuario == null || usuario.trim().isEmpty()) usuario = USUARIO;
+        if (clave == null) clave = CONTRASEÑA;
+        return DriverManager.getConnection(url, usuario, clave);
+    }
 }
